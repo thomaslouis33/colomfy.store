@@ -447,3 +447,22 @@ body {
     }
 }
 
+LA BARRE DE RECHERCHE
+.product-card:hover {
+    /* Effet 3D léger au survol */
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+/* Style pour la zone de défilement (si vous l'utilisez) */
+.product-grid {
+    overflow-y: auto;
+    max-height: calc(100vh - 200px); /* Ajuste la hauteur de la grille de produits */
+}
+/* Taille uniforme pour les icônes SVG dans le menu de navigation */
+.icon {
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.25rem;
+    vertical-align: middle;
+}
+
