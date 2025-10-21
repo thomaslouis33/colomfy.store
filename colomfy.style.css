@@ -1,0 +1,286 @@
+/* Style pour le conteneur principal de la bannière */
+/* Votre fichier colomfy.style.css */
+body {
+    /* C'est ici que vous mettez le code choisi */
+    background-color:  rgb(248, 201, 201); 
+    
+    /* Assurez-vous d'avoir une couleur de texte sombre pour la lisibilité */
+    color: #333333; 
+}
+
+/* Le reste de votre CSS... */
+.banner {
+    /* Fond très doux pour garder une bonne lisibilité du texte */
+    background-image: url('https://plus.unsplash.com/premium_photo-1672883552341-eaebc9240719?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTN8fGUlMjBjb21tZXJjZSUyMGdyYXR1aXR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=400'); 
+    background-size: cover;
+    background-position: center; 
+    
+    /* Le texte de la bannière doit toujours être bien contrasté */
+    color: rgb(248, 201, 201); 
+}.banner-content {
+  text-align: center; /* Centre le texte à l'intérieur de ce bloc */
+  background-color: rgba(0, 0, 0, 0.4); /* Fond semi-transparent noir pour que le texte ressorte */
+  padding: 30px; /* Espace intérieur */
+  border-radius: 5px; /* Coins arrondis */
+}
+
+/* Style pour le titre */
+.banner-title {
+  font-size: 3rem; /* Grande taille de police. 1rem = taille de police par défaut du navigateur */
+  margin-bottom: 15px; /* Espace en dessous du titre */
+}
+
+/* Style pour le texte descriptif */
+.banner-text {
+  font-size: 1.2rem;
+  text-align: center;
+  margin:75px;; /* Espace en dessous du texte */
+}
+
+/* Style pour le bouton d'appel à l'action */
+.banner-button {
+  display: inline-block; /* Pour pouvoir lui donner du padding */
+  background-color:  #FFC0CB; /* Couleur de fond bleue (à changer selon votre marque) */
+  color: rgb(8, 0, 0); /* Couleur du texte */
+  padding: 12px 40px; /* Espace intérieur (haut/bas et gauche/droite) */
+  text-decoration: none; /* Enlève le soulignement du lien */
+  font-weight: bold; /* Texte en gras */
+  border-radius: 5px; /* Coins arrondis */
+  transition: background-color 0.3s ease; /* Animation douce au survol */
+}
+
+/* Style du bouton quand la souris passe dessus */
+.banner-button:hover {
+  background-color: #0056b3; /* Une couleur légèrement plus foncée */
+}
+/* fin de baner */
+
+/* colone */
+.product-grid {
+    /* Utilise CSS Grid pour créer des colonnes */
+    display: grid;
+    /* Crée des colonnes automatiques et responsives */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 30px; /* Espace entre les cartes */
+    padding: 20px;
+    max-width: 1200px; /* Limite la largeur du conteneur principal */
+    margin:0 auto; /* Centre la grille sur la page */
+}
+.product-card {
+    /* Crée le cadre */
+    border: 1px solid #ccc; /* Bordure simple et discrète */
+    border-radius: 8px; /* Coins arrondis */
+    overflow: hidden; /* Empêche l'image de dépasser les coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Petite ombre pour un effet 3D */
+    transition: transform 0.3s ease; /* Animation au survol */
+}
+
+/* Effet au survol (optionnel) */
+.product-card:hover {
+    transform: translateY(-5px); /* Remonte légèrement la carte au survol */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.product-image-container {
+    height: 250px; /* Hauteur fixe pour toutes les images */
+    overflow: hidden;
+}
+
+.product-card img {
+    /* Assure que l'image couvre toute la zone et garde ses proportions */
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.product-details {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-details h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.price {
+    font-weight: bold;
+    color: #b12704; /* Couleur pour le prix */
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    /* Style du bouton "Voir les détails" */
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+/* quick nav button */
+/* ========================================================== */
+/* SECTION DES BOUTONS DE NAVIGATION RAPIDE */
+/* ========================================================== */
+
+.quick-nav-buttons {
+    display: flex; /* Utilise Flexbox pour aligner les boutons */
+    justify-content: center; /* Centre les boutons horizontalement */
+    flex-wrap: wrap; /* Permet aux boutons de passer à la ligne sur petits écrans */
+    gap: 20px; /* Espace entre les boutons */
+    padding: 40px 20px; /* Espace au-dessus et en-dessous de la section */
+    background-color:  rgb(248, 201, 201); /* Un fond très clair pour cette section */
+    border-bottom: 1px solid #eee; /* Une fine ligne en bas */
+}
+
+.button-quick-nav {
+    display: flex; /* Permet d'aligner l'icône et le texte */
+    align-items: center; /* Centre verticalement l'icône et le texte */
+    background-color: #f0f0f0; /* Fond gris clair par défaut */
+    color: #333; /* Texte gris foncé */
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Légère ombre */
+    transition: all 0.3s ease; /* Animation au survol */
+}
+
+.button-quick-nav i {
+    margin-right: 10px; /* Espace entre l'icône et le texte */
+    font-size: 1.2em; /* Taille de l'icône */
+}
+
+/* Style au survol des boutons */
+.button-quick-nav:hover {
+    background-color: #faf7f7; /* Un peu plus foncé au survol */
+    transform: translateY(-3px); /* Effet "pop-up" */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Style spécifique pour le bouton WhatsApp */
+.whatsapp-button {
+    background-color: #25D366; /* Couleur officielle WhatsApp */
+    color: white;
+}
+
+.whatsapp-button:hover {
+    background-color: #1DA851; /* Plus foncé au survol de WhatsApp */
+}s
+/* fin de quick nav button */
+nav {
+    /* Fond blanc pur pour une apparence nette et un bon contraste avec le fond rose/cassé */
+    background-color: #ffffff; 
+    
+    /* Optionnel : ajoute une légère ombre en bas pour qu'elle "flotte" au-dessus du contenu */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    
+    /* Assurez-vous que le texte des liens est sombre */
+    color: #333333; 
+}
+/* hot */
+.hot 
+{ 
+  text-align: center;
+  font-size: xx-large;
+}
+/* fin de hot */
+/* debut footer */
+/* ========================================================== */
+/* FOOTER (PIED DE PAGE) */
+/* ========================================================== */
+
+footer {
+    /* Fond du pied de page : utilisez votre couleur Rose Pâle ou une couleur foncée */
+    background-color: #333333; /* Gris foncé professionnel */
+    color: #f7f7f7; /* Texte blanc cassé pour contraster */
+    padding-top: 50px;
+    font-size: 0.9em;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around; /* Distribue l'espace entre les colonnes */
+    flex-wrap: wrap; /* Important pour la réactivité sur mobile */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 40px;
+}
+
+.footer-col {
+    width: 250px; /* Largeur de base pour les colonnes */
+    margin-bottom: 30px;
+}
+
+.footer-col h3 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #FFC0CB; /* Utilise le Rose Classique pour les titres */
+    font-weight: bold;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col a {
+    color: #cccccc; /* Couleur des liens, plus claire que le texte */
+    text-decoration: none;
+    line-height: 2; /* Espacement vertical */
+    transition: color 0.2s;
+}
+
+.footer-col a:hover {
+    color: #FFC0CB; /* Rose Classique au survol */
+}
+
+/* Style des liens sociaux */
+.social-links .social-icon,
+.coming-soon .social-icon {
+    display: inline-block;
+    color: #FFC0CB; /* Rose Classique pour les icônes */
+    font-size: 1.5em;
+    margin-right: 15px;
+    transition: color 0.2s;
+}
+
+.social-links .social-icon:hover {
+    color: #ffffff; /* Blanc au survol pour les icônes actives */
+}
+
+/* Style pour la section "Bientôt sur :" */
+.coming-soon {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #444; /* Ligne de séparation */
+}
+
+.coming-soon p {
+    color: #FFC0CB; /* Rose Classique pour le message */
+    font-weight: 600;
+}
+
+.disabled-icon {
+    opacity: 0.4; /* Icônes plus ternes pour montrer qu'elles ne sont pas encore actives */
+    cursor: default;
+}
+
+/* Ligne de Copyright */
+.footer-bottom {
+    background-color: #2a2a2a; /* Une nuance plus foncée pour le bas */
+    text-align: center;
+    padding: 15px 20px;
+    color: #aaaaaa;
+    font-size: 0.8em;
+}
+/* fin du footer */
+/* faq */
+.FAQ
+{
+    text-align: center;
+    font-size: xx-large;
+}
+/* fin faq */
