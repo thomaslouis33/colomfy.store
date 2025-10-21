@@ -4,381 +4,334 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalogue - Colomfy Store</title>
-    <!-- Assurez-vous que ce lien est correct ! -->
+    <!-- LIEN CORRIGÉ VERS VOTRE FEUILLE DE STYLE -->
     <link rel="stylesheet" href="style.css"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Icônes pour le bouton WhatsApp -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Ajout de la police Inter (utilisée dans le CSS) pour un look moderne -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- SECTION PRINCIPALE DU CATALOGUE -->
-    <section class="products-container">
-        <header class="page-header">
-            <h1>Notre Collection Rose & Tendance</h1>
-            <p>Cliquez sur "Détails" pour commander instantanément via WhatsApp : +242 06 988 89 45</p>
-        </header>
+    <!-- ========================================================== -->
+    <!-- EN-TÊTE DE LA PAGE PRODUIT -->
+    <!-- ========================================================== -->
+    <header class="page-header">
+        <h1>Notre Collection Rose & Tendance</h1>
+        <p>Découvrez notre sélection exclusive d'accessoires et vêtements, parfaits pour sublimer votre style.</p>
+    </header>
 
-        <div class="products-grid">
-            
-            <!-- PRODUIT 1 : MINI VENTILATEUR -->
-            <div class="product-card">
-                <!-- Image d'un ventilateur rose (placeholder réaliste) -->
-                <img src="https://images.pexels.com/photos/1039803/pexels-photo-1039803.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" 
-                     alt="Mini ventilateur portable rose USB">
-                <div class="product-details">
-                    <h2 class="product-title">Mini Ventilateur USB</h2>
-                    <p class="product-price">5 000 FCFA</p>
-                    <p class="product-description">
-                        L'accessoire indispensable de l'été. Ce mini ventilateur rechargeable par USB est discret, puissant et se glisse facilement dans votre sac à main. Finition rose poudré.
-                    </p>
-                    <a href="https://wa.me/242069888945?text=Bonjour,%20je%20souhaite%20commander%20le%20Mini%20Ventilateur%20USB%20à%205000%20FCFA." 
-                       target="_blank" class="cta-button details-button">
-                        <i class="fab fa-whatsapp"></i> Voir les détails
-                    </a>
-                </div>
+    <!-- ========================================================== -->
+    <!-- GRILLE DES PRODUITS (PRODUCTS-GRID) -->
+    <!-- La correction du responsive et de l'espace vide se fait via le CSS de cette classe -->
+    <!-- ========================================================== -->
+    <section class="products-grid">
+        
+        <!-- PRODUIT 1 : MINI VENTILATEUR -->
+        <div class="product-card">
+            <!-- Image de produit fictive -->
+            <img src="https://placehold.co/600x400/FFC0CB/000000?text=Mini+Ventilateur" alt="Mini ventilateur portable rose">
+            <div class="product-details">
+                <h2 class="product-title">Mini Ventilateur Portable</h2>
+                <p class="product-price">5 000 FCFA</p>
+                <p class="product-description">Restez au frais avec ce ventilateur de poche puissant et silencieux. Idéal pour l'été et les déplacements. Rechargeable par USB, couleur rose poudré.</p>
+                <!-- Bouton de commande WhatsApp -->
+                <a href="https://wa.me/242069888945?text=Je%20souhaite%20commander%20le%20Mini%20Ventilateur%20Portable" class="cta-button details-button" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Commander
+                </a>
             </div>
-
-            <!-- PRODUIT 2 : BARRETTE POUR FEMME -->
-            <div class="product-card">
-                <!-- Image d'une barrette (placeholder réaliste) -->
-                <img src="https://images.pexels.com/photos/8118247/pexels-photo-8118247.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" 
-                     alt="Barrette pour cheveux en perles roses et dorées">
-                <div class="product-details">
-                    <h2 class="product-title">Barrette Ornée de Perles</h2>
-                    <p class="product-price">500 FCFA</p>
-                    <p class="product-description">
-                        Ajoutez une touche de sophistication à votre coiffure. Barrette chic en métal doré ornée de fines perles roses. Parfait pour un maintien élégant de votre mèche.
-                    </p>
-                    <a href="https://wa.me/242069888945?text=Bonjour,%20je%20souhaite%20commander%20la%20Barrette%20Ornée%20de%20Perles%20à%20500%20FCFA." 
-                       target="_blank" class="cta-button details-button">
-                        <i class="fab fa-whatsapp"></i> Voir les détails
-                    </a>
-                </div>
-            </div>
-
-            <!-- PRODUIT 3 : ROBE DE SOIRÉE -->
-            <div class="product-card">
-                <!-- Image d'une robe de soirée (placeholder réaliste) -->
-                <img src="https://images.pexels.com/photos/175657/pexels-photo-175657.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" 
-                     alt="Robe de soirée longue rose fuchsia">
-                <div class="product-details">
-                    <h2 class="product-title">Robe de Soirée Étoile</h2>
-                    <p class="product-price">1 500 FCFA</p>
-                    <p class="product-description">
-                        Affirmez votre style. Cette robe longue rose fuchsia, confectionnée en satin fluide, offre une coupe ajustée et élégante. Idéale pour les mariages ou les galas.
-                    </p>
-                    <a href="https://wa.me/242069888945?text=Bonjour,%20je%20souhaite%20commander%20la%20Robe%20de%20Soirée%20Étoile%20à%201500%20FCFA." 
-                       target="_blank" class="cta-button details-button">
-                        <i class="fab fa-whatsapp"></i> Voir les détails
-                    </a>
-                </div>
-            </div>
-
-            <!-- 20 AUTRES PRODUITS AVEC DESCRIPTIONS ET IMAGES RÉALISTES -->
-
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/1959734/pexels-photo-1959734.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" alt="Portefeuille en cuir rose">
-                <div class="product-details">
-                    <h2 class="product-title">Portefeuille Cuir Compact</h2>
-                    <p class="product-price">6 000 FCFA</p>
-                    <p class="product-description">
-                        Minimaliste et chic. Ce portefeuille en similicuir rose offre plusieurs compartiments pour cartes et monnaie. Fermeture éclair discrète et élégante.
-                    </p>
-                    <a href="https://wa.me/242069888945?text=Bonjour,%20je%20souhaite%20commander%20le%20Portefeuille%20Cuir%20Compact%20à%206000%20FCFA." target="_blank" class="cta-button details-button"><i class="fab fa-whatsapp"></i> Détails</a>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/208220/pexels-photo-208220.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" alt="Boucles d'oreilles rose doré">
-                <div class="product-details">
-                    <h2 class="product-title">Boucles d'Oreilles Rosées</h2>
-                    <p class="product-price">2 800 FCFA</p>
-                    <p class="product-description">
-                        Design délicat en forme de goutte, avec des pierres semi-précieuses couleur quartz rose. Légères et parfaites pour un look de jour comme de soirée.
-                    </p>
-                    <a href="https://wa.me/242069888945?text=Bonjour,%20je%20souhaite%20commander%20les%20Boucles%20d'Oreilles%20Rosées%20à%202800%20FCFA." target="_blank" class="cta-button details-button"><i class="fab fa-whatsapp"></i> Détails</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/3985334/pexels-photo-3985334.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" alt="Sac à main à bandoulière rose">
-                <div class="product-details">
-                    <h2 class="product-title">Sac Bandoulière Croco</h2>
-                    <p class="product-price">14 500 FCFA</p>
-                    <p class="product-description">
-                        Similicuir texturé effet croco. Ce sac à bandoulière offre un espace suffisant pour vos essentiels. Fermeture à rabat magnétique, couleur framboise.
-                    </p>
-                    <a href="https://wa.me/242069888945?text=Bonjour,%20je%20souhaite%20commander%20le%20Sac%20Bandoulière%20Croco%20à%2014500%20FCFA." target="_blank" class="cta-button details-button"><i class="fab fa-whatsapp"></i> Détails</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/1036856/pexels-photo-1036856.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" alt="Tapis de souris ergonomique rose">
-                <div class="product-details">
-                    <h2 class="product-title">Tapis de Souris Ergonomique</h2>
-                    <p class="product-price">3 200 FCFA</p>
-                    <p class="product-description">
-                        Optimisez votre espace de travail. Surface douce et repose-poignet rembourré pour un confort accru lors de longues heures devant l'ordinateur.
-                    </p>
-                    <a href="https://wa.me/242069888945?text=Bonjour,%20je%20souhaite%20commander%20le%20Tapis%20de%20Souris%20Ergonomique%20à%203200%20FCFA." target="_blank" class="cta-button details-button"><i class="fab fa-whatsapp"></i> Détails</a>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/1769640/pexels-photo-1769640.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" alt="Baskets rose pastel pour femme">
-                <div class="product-details">
-                    <h2 class="product-title">Baskets Tendance</h2>
-                    <p class="product-price">25 000 FCFA</p>
-                    <p class="product-description">
-                        Confort et style urbain. Ces baskets légères offrent un amorti parfait pour la marche quotidienne. Couleur rose pastel avec accents blancs.
-                    </p>
-                    <a href="https://wa.me/242069888945?text=Bonjour,%20je%20souhaite%20commander%20les%20Baskets%20Tendance%20à%2025000%20FCFA." target="_blank" class="cta-button details-button"><i class="fab fa-whatsapp"></i> Détails</a>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/1034440/pexels-photo-1034440.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" alt="Montre connectée avec bracelet rose">
-                <div class="product-details">
-                    <h2 class="product-title">Montre Connectée Sport</h2>
-                    <p class="product-price">35 000 FCFA</p>
-                    <p class="product-description">
-                        Suivez votre activité physique et vos notifications. Écran HD, bracelet en silicone rose ajustable. Compatible iOS et Android.
-                    </p>
-                    <a href="https://wa.me/242069888945?text=Bonjour,%20je%20souhaite%20commander%20la%20Montre%20Connectée%20Sport%20à%2035000%20FCFA." target="_blank" class="cta-button details-button"><i class="fab fa-whatsapp"></i> Détails</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/1488463/pexels-photo-1488463.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" alt="Coussin décoratif rose avec motif géométrique">
-                <div class="product-details">
-                    <h2 class="product-title">Coussin Velours Géométrique</h2>
-                    <p class="product-price">5 800 FCFA</p>
-                    <p class="product-description">
-                        Ajoutez du caractère à votre canapé. Housse en velours rose doux avec un motif géométrique discret. Déhoussable et lavable en machine.
-                    </p>
-                    <a href="https://wa.me/242069888945?text=Bonjour,%20je%20souhaite%20commander%20le%20Coussin%20Velours%20Géométrique%20à%205800%20FCFA." target="_blank" class="cta-button details-button"><i class="fab fa-whatsapp"></i> Détails</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/1036070/pexels-photo-1036070.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" alt="T-shirt décontracté rose clair">
-                <div class="product-details">
-                    <h2 class="product-title">T-shirt Basique Oversize</h2>
-                    <p class="product-price">3 500 FCFA</p>
-                    <p class="product-description">
-                        Le classique revisité. 100% coton, coupe ample pour un confort maximal. Parfait pour les journées décontractées ou un look sportif.
-                    </p>
-                    <a href="https://wa.me/242069888945?text=Bonjour,%20je%20souhaite%20commander%20le%20T-shirt%20Basique%20Oversize%20à%203500%20FCFA." target="_blank" class="cta-button details-button"><i class="fab fa-whatsapp"></i> Détails</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/6321481/pexels-photo-6321481.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" alt="Vernis à ongles rose pastel et brillant">
-                <div class="product-details">
-                    <h2 class="product-title">Vernis Gel Brillant</h2>
-                    <p class="product-price">1 200 FCFA</p>
-                    <p class="product-description">
-                        Formule longue tenue effet gel pour une brillance intense. Couleur rose pastel idéale pour toutes les saisons. Séchage rapide.
-                    </p>
-                    <a href="https://wa.me/242069888945?text=Bonjour,%20je%20souhaite%20commander%20le%20Vernis%20Gel%20Brillant%20à%201200%20FCFA." target="_blank" class="cta-button details-button"><i class="fab fa-whatsapp"></i> Détails</a>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/4587635/pexels-photo-4587635.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" alt="Kit de pinceaux de maquillage rose">
-                <div class="product-details">
-                    <h2 class="product-title">Kit Pinceaux Maquillage (10Pcs)</h2>
-                    <p class="product-price">7 900 FCFA</p>
-                    <p class="product-description">
-                        Ensemble complet de 10 pinceaux professionnels aux manches roses. Pour fond de teint, poudre, blush et ombres à paupières.
-                    </p>
-                    <a href="https://wa.me/242069888945?text=Bonjour,%20je%20souhaite%20commander%20le%20Kit%20Pinceaux%20Maquillage%20à%207900%20FCFA." target="_blank" class="cta-button details-button"><i class="fab fa-whatsapp"></i> Détails</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/1034440/pexels-photo-1034440.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" alt="Bouteille d'eau réutilisable rose">
-                <div class="product-details">
-                    <h2 class="product-title">Bouteille Isotherme Sport</h2>
-                    <p class="product-price">4 500 FCFA</p>
-                    <p class="product-description">
-                        Garde vos boissons froides 24h et chaudes 12h. Capacité 500ml, design ergonomique et couleur rose mat anti-dérapante.
-                    </p>
-                    <a href="https://wa.me/242069888945?text=Bonjour,%20je%20souhaite%20commander%20la%20Bouteille%20Isotherme%20Sport%20à%204500%20FCFA." target="_blank" class="cta-button details-button"><i class="fab fa-whatsapp"></i> Détails</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/6684742/pexels-photo-6684742.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" alt="Chargeur sans fil rose pour téléphone">
-                <div class="product-details">
-                    <h2 class="product-title">Chargeur Induction Rose</h2>
-                    <p class="product-price">11 000 FCFA</p>
-                    <p class="product-description">
-                        Charge rapide sans fil pour smartphones compatibles. Design ultra-plat, surface en silicone pour éviter les glissements.
-                    </p>
-                    <a href="https://wa.me/242069888945?text=Bonjour,%20je%20souhaite%20commander%20le%20Chargeur%20Induction%20Rose%20à%2011000%20FCFA." target="_blank" class="cta-button details-button"><i class="fab fa-whatsapp"></i> Détails</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/7901306/pexels-photo-7901306.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" alt="Bonnet en laine rose">
-                <div class="product-details">
-                    <h2 class="product-title">Bonnet Tricot Hiver</h2>
-                    <p class="product-price">5 500 FCFA</p>
-                    <p class="product-description">
-                        Gardez la tête au chaud avec ce bonnet en grosse maille. Doublure intérieure douce, couleur rose fuchsia. Taille unique.
-                    </p>
-                    <a href="https://wa.me/242069888945?text=Bonjour,%20je%20souhaite%20commander%20le%20Bonnet%20Tricot%20Hiver%20à%205500%20FCFA." target="_blank" class="cta-button details-button"><i class="fab fa-whatsapp"></i> Détails</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/2030048/pexels-photo-2030048.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" alt="Tote bag en toile rose">
-                <div class="product-details">
-                    <h2 class="product-title">Tote Bag Écologique</h2>
-                    <p class="product-price">3 800 FCFA</p>
-                    <p class="product-description">
-                        Sac en toile de coton réutilisable, idéal pour le shopping ou les cours. Design minimaliste, couleur rose pastel.
-                    </p>
-                    <a href="https://wa.me/242069888945?text=Bonjour,%20je%20souhaite%20commander%20le%20Tote%20Bag%20Écologique%20à%203800%20FCFA." target="_blank" class="cta-button details-button"><i class="fab fa-whatsapp"></i> Détails</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/5472496/pexels-photo-5472496.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" alt="Paire de gants roses pour smartphone">
-                <div class="product-details">
-                    <h2 class="product-title">Gants Tactiles Hiver</h2>
-                    <p class="product-price">4 200 FCFA</p>
-                    <p class="product-description">
-                        Gardez vos mains au chaud tout en utilisant votre smartphone ! Matériau spécial sur les doigts, couleur rose vif.
-                    </p>
-                    <a href="https://wa.me/242069888945?text=Bonjour,%20je%20souhaite%20commander%20les%20Gants%20Tactiles%20Hiver%20à%204200%20FCFA." target="_blank" class="cta-button details-button"><i class="fab fa-whatsapp"></i> Détails</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/4005888/pexels-photo-4005888.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" alt="Carnet et stylo rose pour la prise de notes">
-                <div class="product-details">
-                    <h2 class="product-title">Journal Intime & Stylo</h2>
-                    <p class="product-price">4 900 FCFA</p>
-                    <p class="product-description">
-                        Carnet A5 à couverture souple rose avec un stylo assorti. Parfait pour vos idées, vos rêves ou votre to-do list.
-                    </p>
-                    <a href="https://wa.me/242069888945?text=Bonjour,%20je%20souhaite%20commander%20le%20Journal%20Intime%20&%20Stylo%20à%204900%20FCFA." target="_blank" class="cta-button details-button"><i class="fab fa-whatsapp"></i> Détails</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/1036070/pexels-photo-1036070.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" alt="Pull en laine rose doux">
-                <div class="product-details">
-                    <h2 class="product-title">Pull en Mailles Douces</h2>
-                    <p class="product-price">18 000 FCFA</p>
-                    <p class="product-description">
-                        Un pull oversize en laine mélangée, idéal pour rester au chaud. Couleur rose poudré. Disponible en tailles S, M, L.
-                    </p>
-                    <a href="https://wa.me/242069888945?text=Bonjour,%20je%20souhaite%20commander%20le%20Pull%20en%20Mailles%20Douces%20à%2018000%20FCFA." target="_blank" class="cta-button details-button"><i class="fab fa-whatsapp"></i> Détails</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/2030048/pexels-photo-2030048.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" alt="Coque de téléphone portable rose">
-                <div class="product-details">
-                    <h2 class="product-title">Coque Silicone Mat</h2>
-                    <p class="product-price">2 000 FCFA</p>
-                    <p class="product-description">
-                        Protection antichoc pour votre smartphone. Fini mat, toucher doux, disponible pour tous les modèles récents (Indiquez le vôtre).
-                    </p>
-                    <a href="https://wa.me/242069888945?text=Bonjour,%20je%20souhaite%20commander%20la%20Coque%20Silicone%20Mat%20à%202000%20FCFA." target="_blank" class="cta-button details-button"><i class="fab fa-whatsapp"></i> Détails</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/5713480/pexels-photo-5713480.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" alt="Petite lampe de bureau LED rose">
-                <div class="product-details">
-                    <h2 class="product-title">Lampe de Bureau LED</h2>
-                    <p class="product-price">9 500 FCFA</p>
-                    <p class="product-description">
-                        Design épuré et moderne. 3 niveaux de luminosité, flexible, parfaite pour la lecture ou le travail de nuit. Couleur rose pâle.
-                    </p>
-                    <a href="https://wa.me/242069888945?text=Bonjour,%20je%20souhaite%20commander%20la%20Lampe%20de%20Bureau%20LED%20à%209500%20FCFA." target="_blank" class="cta-button details-button"><i class="fab fa-whatsapp"></i> Détails</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/7178749/pexels-photo-7178749.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" alt="Mug en céramique rose pour boisson chaude">
-                <div class="product-details">
-                    <h2 class="product-title">Mug Céramique XXL</h2>
-                    <p class="product-price">3 000 FCFA</p>
-                    <p class="product-description">
-                        Grande tasse idéale pour le thé, le café ou le chocolat chaud. Finition mate et poignée confortable. Compatible micro-ondes.
-                    </p>
-                    <a href="https://wa.me/242069888945?text=Bonjour,%20je%20souhaite%20commander%20le%20Mug%20Céramique%20XXL%20à%203000%20FCFA." target="_blank" class="cta-button details-button"><i class="fab fa-whatsapp"></i> Détails</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/4587635/pexels-photo-4587635.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" alt="Lot de pinces à cheveux roses">
-                <div class="product-details">
-                    <h2 class="product-title">Lot de Pinces Cheveux</h2>
-                    <p class="product-price">1 500 FCFA</p>
-                    <p class="product-description">
-                        Lot de 4 grandes pinces en plastique mat pour maintenir les cheveux épais. Couleurs variées dans les tons rose et neutre.
-                    </p>
-                    <a href="https://wa.me/242069888945?text=Bonjour,%20je%20souhaite%20commander%20le%20Lot%20de%20Pinces%20Cheveux%20à%201500%20FCFA." target="_blank" class="cta-button details-button"><i class="fab fa-whatsapp"></i> Détails</a>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/6321481/pexels-photo-6321481.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" alt="Brosse à dents électrique rose">
-                <div class="product-details">
-                    <h2 class="product-title">Brosse à Dents Électrique</h2>
-                    <p class="product-price">14 000 FCFA</p>
-                    <p class="product-description">
-                        Nettoyage en profondeur, 3 modes de brossage. Vendue avec sa base de recharge USB et deux têtes de rechange.
-                    </p>
-                    <a href="https://wa.me/242069888945?text=Bonjour,%20je%20souhaite%20commander%20la%20Brosse%20à%20Dents%20Électrique%20à%2014000%20FCFA." target="_blank" class="cta-button details-button"><i class="fab fa-whatsapp"></i> Détails</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/1769640/pexels-photo-1769640.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" alt="Cache-oreilles roses pour l'hiver">
-                <div class="product-details">
-                    <h2 class="product-title">Cache-Oreilles Peluche</h2>
-                    <p class="product-price">4 500 FCFA</p>
-                    <p class="product-description">
-                        Accessoire d'hiver ultra-doux et chaud. Bandeau ajustable, couleur rose clair. Protège efficacement du froid.
-                    </p>
-                    <a href="https://wa.me/242069888945?text=Bonjour,%20je%20souhaite%20commander%20le%20Cache-Oreilles%20Peluche%20à%204500%20FCFA." target="_blank" class="cta-button details-button"><i class="fab fa-whatsapp"></i> Détails</a>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/1959734/pexels-photo-1959734.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" alt="Étole en fausse fourrure rose">
-                <div class="product-details">
-                    <h2 class="product-title">Étole Fausse Fourrure</h2>
-                    <p class="product-price">9 000 FCFA</p>
-                    <p class="product-description">
-                        Accessoire de soirée élégant pour couvrir vos épaules. Matière douce et soyeuse, couleur vieux rose.
-                    </p>
-                    <a href="https://wa.me/242069888945?text=Bonjour,%20je%20souhaite%20commander%20l'Étole%20Fausse%20Fourrure%20à%209000%20FCFA." target="_blank" class="cta-button details-button"><i class="fab fa-whatsapp"></i> Détails</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/4005888/pexels-photo-4005888.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" alt="Coffret cadeau de papeterie rose">
-                <div class="product-details">
-                    <h2 class="product-title">Coffret Cadeau Papeterie</h2>
-                    <p class="product-price">6 500 FCFA</p>
-                    <p class="product-description">
-                        Un assortiment de stylos, post-it et carnets, le tout dans une boîte thématique rose. Idéal pour offrir.
-                    </p>
-                    <a href="https://wa.me/242069888945?text=Bonjour,%20je%20souhaite%20commander%20le%20Coffret%20Cadeau%20Papeterie%20à%206500%20FCFA." target="_blank" class="cta-button details-button"><i class="fab fa-whatsapp"></i> Détails</a>
-                </div>
-            </div>
-            
         </div>
+
+        <!-- PRODUIT 2 : BARRETTE POUR FEMME -->
+        <div class="product-card">
+            <img src="https://placehold.co/600x400/F08080/FFFFFF?text=Barrette+Rose+Strass" alt="Barrette à cheveux rose avec strass">
+            <div class="product-details">
+                <h2 class="product-title">Barrette Chic en Strass</h2>
+                <p class="product-price">500 FCFA</p>
+                <p class="product-description">Ajoutez une touche de brillance à votre coiffure avec cette barrette ornée de strass roses. Parfaite pour une tenue de tous les jours ou une occasion spéciale.</p>
+                <a href="https://wa.me/242069888945?text=Je%20souhaite%20commander%20la%20Barrette%20Chic%20en%20Strass" class="cta-button details-button" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Commander
+                </a>
+            </div>
+        </div>
+
+        <!-- PRODUIT 3 : ROBE DE SOIRÉE -->
+        <div class="product-card">
+            <img src="https://placehold.co/600x400/C71585/FFFFFF?text=Robe+Soir%C3%A9e+Fuchsia" alt="Robe de soirée rose fuchsia">
+            <div class="product-details">
+                <h2 class="product-title">Robe de Soirée Étoile</h2>
+                <p class="product-price">1 500 FCFA</p>
+                <p class="product-description">Magnifique robe longue rose fuchsia. Tissu fluide et coupe élégante, idéale pour les mariages, galas ou fêtes. Disponible en plusieurs tailles.</p>
+                <a href="https://wa.me/242069888945?text=Je%20souhaite%20commander%20la%20Robe%20de%20Soir%C3%A9e%20Étoile" class="cta-button details-button" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Commander
+                </a>
+            </div>
+        </div>
+        
+        <!-- PRODUIT 4 : MUG ISOTHERME -->
+        <div class="product-card">
+            <img src="https://placehold.co/600x400/F5A9B8/333333?text=Mug+Isotherme+Rose" alt="Mug isotherme rose pastel">
+            <div class="product-details">
+                <h2 class="product-title">Mug Isotherme Design</h2>
+                <p class="product-price">3 500 FCFA</p>
+                <p class="product-description">Garde vos boissons chaudes pendant 6h et froides pendant 12h. Fini mat, rose bébé. Parfait pour le bureau ou les voyages.</p>
+                <a href="https://wa.me/242069888945?text=Je%20souhaite%20commander%20le%20Mug%20Isotherme%20Design" class="cta-button details-button" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Commander
+                </a>
+            </div>
+        </div>
+
+        <!-- PRODUIT 5 : COQUE IPHONE -->
+        <div class="product-card">
+            <img src="https://placehold.co/600x400/E3A0B3/FFFFFF?text=Coque+iPhone+Glossy" alt="Coque d'iPhone rose brillant">
+            <div class="product-details">
+                <h2 class="product-title">Coque iPhone Rose Glossy</h2>
+                <p class="product-price">1 200 FCFA</p>
+                <p class="product-description">Protection antichoc et finition brillante pour votre téléphone. Disponible pour tous les modèles récents d'iPhone. Toucher agréable et durable.</p>
+                <a href="https://wa.me/242069888945?text=Je%20souhaite%20commander%20la%20Coque%20iPhone%20Rose%20Glossy" class="cta-button details-button" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Commander
+                </a>
+            </div>
+        </div>
+
+        <!-- PRODUIT 6 : BLUSH POUDRE -->
+        <div class="product-card">
+            <img src="https://placehold.co/600x400/F0F8FF/FF0080?text=Blush+Rose+Poudre" alt="Blush de maquillage rose poudre">
+            <div class="product-details">
+                <h2 class="product-title">Blush Rose Doux</h2>
+                <p class="product-price">2 000 FCFA</p>
+                <p class="product-description">Un fard à joues léger et pigmenté pour un éclat naturel. Formule longue tenue, idéale pour toutes les carnations. Boîtier miroir élégant.</p>
+                <a href="https://wa.me/242069888945?text=Je%20souhaite%20commander%20le%20Blush%20Rose%20Doux" class="cta-button details-button" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Commander
+                </a>
+            </div>
+        </div>
+        
+        <!-- PRODUIT 7 : CARNET SPIRALE -->
+        <div class="product-card">
+            <img src="https://placehold.co/600x400/DDA0DD/333333?text=Carnet+Rose+A5" alt="Carnet à spirale rose format A5">
+            <div class="product-details">
+                <h2 class="product-title">Carnet Spirale A5</h2>
+                <p class="product-price">800 FCFA</p>
+                <p class="product-description">150 pages lignées, couverture rigide rose lavande. Parfait pour vos notes de cours, journaux intimes ou listes de tâches. Format pratique à emporter.</p>
+                <a href="https://wa.me/242069888945?text=Je%20souhaite%20commander%20le%20Carnet%20Spirale%20A5" class="cta-button details-button" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Commander
+                </a>
+            </div>
+        </div>
+        
+        <!-- PRODUIT 8 : LINGE DE BAIN -->
+        <div class="product-card">
+            <img src="https://placehold.co/600x400/FFB6C1/333333?text=Serviette+Bain+Coton" alt="Serviette de bain en coton rose">
+            <div class="product-details">
+                <h2 class="product-title">Serviette de Bain Luxe</h2>
+                <p class="product-price">4 500 FCFA</p>
+                <p class="product-description">Serviette 100% coton égyptien, ultra-douce et très absorbante. Couleur rose corail. Apportez le luxe d'un spa à votre salle de bain.</p>
+                <a href="https://wa.me/242069888945?text=Je%20souhaite%20commander%20la%20Serviette%20de%20Bain%20Luxe" class="cta-button details-button" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Commander
+                </a>
+            </div>
+        </div>
+        
+        <!-- PRODUIT 9 : VESTE EN JEAN -->
+        <div class="product-card">
+            <img src="https://placehold.co/600x400/E6E6FA/FF0080?text=Veste+Jean+D%C3%A9lav%C3%A9" alt="Veste en jean rose délavé">
+            <div class="product-details">
+                <h2 class="product-title">Veste Jean Décontractée</h2>
+                <p class="product-price">12 000 FCFA</p>
+                <p class="product-description">Coupe oversize tendance, rose délavé. Parfaite pour un look casual chic. Pièce polyvalente pour toutes les saisons.</p>
+                <a href="https://wa.me/242069888945?text=Je%20souhaite%20commander%20la%20Veste%20Jean%20D%C3%A9contract%C3%A9e" class="cta-button details-button" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Commander
+                </a>
+            </div>
+        </div>
+        
+        <!-- PRODUIT 10 : CHAUSSETTES FANTAISIE -->
+        <div class="product-card">
+            <img src="https://placehold.co/600x400/F08080/FFFFFF?text=Chaussettes+Fleuries" alt="Chaussettes fantaisie à motifs roses">
+            <div class="product-details">
+                <h2 class="product-title">Chaussettes Motif Fleuri</h2>
+                <p class="product-price">1 000 FCFA</p>
+                <p class="product-description">Un ensemble de chaussettes en coton doux avec un motif floral délicat rose et blanc. Idéales pour apporter de la gaieté à votre journée.</p>
+                <a href="https://wa.me/242069888945?text=Je%20souhaite%20commander%20les%20Chaussettes%20Motif%20Fleuri" class="cta-button details-button" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Commander
+                </a>
+            </div>
+        </div>
+        
+        <!-- PRODUIT 11 : PORTE-MONNAIE ZIPPE -->
+        <div class="product-card">
+            <img src="https://placehold.co/600x400/CBA0B3/FFFFFF?text=Porte-monnaie+Cuir" alt="Porte-monnaie en cuir rose">
+            <div class="product-details">
+                <h2 class="product-title">Porte-monnaie Compact</h2>
+                <p class="product-price">6 500 FCFA</p>
+                <p class="product-description">Petit porte-monnaie en similicuir rose avec fermeture éclair dorée. Assez grand pour les pièces et les billets, tient facilement dans un sac à main.</p>
+                <a href="https://wa.me/242069888945?text=Je%20souhaite%20commander%20le%20Porte-monnaie%20Compact" class="cta-button details-button" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Commander
+                </a>
+            </div>
+        </div>
+        
+        <!-- PRODUIT 12 : MONTRE CONNECTÉE BRACELET ROSE -->
+        <div class="product-card">
+            <img src="https://placehold.co/600x400/FFDAB9/333333?text=Montre+Connect%C3%A9e" alt="Montre connectée avec bracelet rose">
+            <div class="product-details">
+                <h2 class="product-title">Montre Connectée Sport</h2>
+                <p class="product-price">25 000 FCFA</p>
+                <p class="product-description">Suivi d'activité, notifications et moniteur de fréquence cardiaque. Bracelet en silicone rose ajustable. Compatible iOS et Android.</p>
+                <a href="https://wa.me/242069888945?text=Je%20souhaite%20commander%20la%20Montre%20Connect%C3%A9e%20Sport" class="cta-button details-button" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Commander
+                </a>
+            </div>
+        </div>
+        
+        <!-- PRODUIT 13 : KIT DE PINCEAUX MAQUILLAGE -->
+        <div class="product-card">
+            <img src="https://placehold.co/600x400/F5C6D8/333333?text=Pinceaux+Maquillage" alt="Kit de pinceaux de maquillage roses">
+            <div class="product-details">
+                <h2 class="product-title">Kit 10 Pinceaux Rose</h2>
+                <p class="product-price">3 000 FCFA</p>
+                <p class="product-description">Ensemble complet de pinceaux pour le teint et les yeux. Poils synthétiques ultra-doux. Manche ergonomique rose dégradé.</p>
+                <a href="https://wa.me/242069888945?text=Je%20souhaite%20commander%20le%20Kit%2010%20Pinceaux%20Rose" class="cta-button details-button" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Commander
+                </a>
+            </div>
+        </div>
+        
+        <!-- PRODUIT 14 : CENDRIER ROSE -->
+        <div class="product-card">
+            <img src="https://placehold.co/600x400/EE82EE/FFFFFF?text=Cendrier+Design" alt="Cendrier rose en verre">
+            <div class="product-details">
+                <h2 class="product-title">Cendrier en Verre Tendance</h2>
+                <p class="product-price">1 500 FCFA</p>
+                <p class="product-description">Cendrier décoratif en verre teinté rose. Ajoute une touche de couleur et d'élégance à votre espace extérieur ou intérieur.</p>
+                <a href="https://wa.me/242069888945?text=Je%20souhaite%20commander%20le%20Cendrier%20en%20Verre%20Tendance" class="cta-button details-button" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Commander
+                </a>
+            </div>
+        </div>
+        
+        <!-- PRODUIT 15 : DIFFUSEUR D'HUILES ESSENTIELLES -->
+        <div class="product-card">
+            <img src="https://placehold.co/600x400/DDA0DD/333333?text=Diffuseur+Aromatique" alt="Diffuseur d'huiles essentielles rose">
+            <div class="product-details">
+                <h2 class="product-title">Diffuseur Aromatique Zen</h2>
+                <p class="product-price">8 000 FCFA</p>
+                <p class="product-description">Diffuseur d'huiles essentielles par ultrasons. Lumière d'ambiance LED rose intégrée. Idéal pour purifier l'air et créer une atmosphère relaxante.</p>
+                <a href="https://wa.me/242069888945?text=Je%20souhaite%20commander%20le%20Diffuseur%20Aromatique%20Zen" class="cta-button details-button" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Commander
+                </a>
+            </div>
+        </div>
+        
+        <!-- PRODUIT 16 : CASQUE AUDIO SANS FIL -->
+        <div class="product-card">
+            <img src="https://placehold.co/600x400/F08080/FFFFFF?text=Casque+Sans+Fil+Rose" alt="Casque audio sans fil rose">
+            <div class="product-details">
+                <h2 class="product-title">Casque Audio Bluetooth</h2>
+                <p class="product-price">18 000 FCFA</p>
+                <p class="product-description">Son haute fidélité et isolation du bruit. Design pliable, autonomie de 20 heures. Couleur rose mat élégante.</p>
+                <a href="https://wa.me/242069888945?text=Je%20souhaite%20commander%20le%20Casque%20Audio%20Bluetooth" class="cta-button details-button" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Commander
+                </a>
+            </div>
+        </div>
+        
+        <!-- PRODUIT 17 : BRACELET PERLES -->
+        <div class="product-card">
+            <img src="https://placehold.co/600x400/F0F8FF/FF0080?text=Bracelet+Perles+Rose" alt="Bracelet de perles roses">
+            <div class="product-details">
+                <h2 class="product-title">Bracelet Élégant Perles</h2>
+                <p class="product-price">2 500 FCFA</p>
+                <p class="product-description">Bracelet élastique avec perles roses naturelles et petits accents dorés. Parfait pour offrir ou se faire plaisir.</p>
+                <a href="https://wa.me/242069888945?text=Je%20souhaite%20commander%20le%20Bracelet%20Élégant%20Perles" class="cta-button details-button" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Commander
+                </a>
+            </div>
+        </div>
+        
+        <!-- PRODUIT 18 : TROUSSE DE TOILETTE -->
+        <div class="product-card">
+            <img src="https://placehold.co/600x400/E3A0B3/333333?text=Trousse+Voyage+Rose" alt="Trousse de toilette de voyage rose">
+            <div class="product-details">
+                <h2 class="product-title">Trousse de Voyage Luxe</h2>
+                <p class="product-price">3 000 FCFA</p>
+                <p class="product-description">Grande trousse de toilette imperméable. Idéale pour ranger maquillage et produits de voyage. Fermeture éclair robuste et poignée pratique.</p>
+                <a href="https://wa.me/242069888945?text=Je%20souhaite%20commander%20la%20Trousse%20de%20Voyage%20Luxe" class="cta-button details-button" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Commander
+                </a>
+            </div>
+        </div>
+        
+        <!-- PRODUIT 19 : TAPIS DE YOGA -->
+        <div class="product-card">
+            <img src="https://placehold.co/600x400/F5A9B8/333333?text=Tapis+Yoga+Rose" alt="Tapis de yoga rose">
+            <div class="product-details">
+                <h2 class="product-title">Tapis de Yoga Confort</h2>
+                <p class="product-price">9 000 FCFA</p>
+                <p class="product-description">Tapis de yoga antidérapant de 6mm d'épaisseur, idéal pour le Pilates et le fitness. Livré avec sa sangle de transport.</p>
+                <a href="https://wa.me/242069888945?text=Je%20souhaite%20commander%20le%20Tapis%20de%20Yoga%20Confort" class="cta-button details-button" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Commander
+                </a>
+            </div>
+        </div>
+        
+        <!-- PRODUIT 20 : LUNETTES DE SOLEIL -->
+        <div class="product-card">
+            <img src="https://placehold.co/600x400/FFC0CB/000000?text=Lunettes+De+Soleil" alt="Lunettes de soleil avec monture rose">
+            <div class="product-details">
+                <h2 class="product-title">Lunettes de Soleil Vintage</h2>
+                <p class="product-price">4 000 FCFA</p>
+                <p class="product-description">Monture oeil-de-chat rose pâle, verres polarisés. Protection UV400. Le look parfait pour cet été.</p>
+                <a href="https://wa.me/242069888945?text=Je%20souhaite%20commander%20les%20Lunettes%20de%20Soleil%20Vintage" class="cta-button details-button" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Commander
+                </a>
+            </div>
+        </div>
+        
+        <!-- PRODUIT 21 : VERNIS À ONGLES -->
+        <div class="product-card">
+            <img src="https://placehold.co/600x400/FFDAB9/333333?text=Vernis+%C3%A0+Ongles+Gel" alt="Flacon de vernis à ongles rose clair">
+            <div class="product-details">
+                <h2 class="product-title">Vernis à Ongles Gel</h2>
+                <p class="product-price">1 500 FCFA</p>
+                <p class="product-description">Vernis rose clair, effet gel longue durée. Séchage rapide et brillance intense. Formule non toxique.</p>
+                <a href="https://wa.me/242069888945?text=Je%20souhaite%20commander%20le%20Vernis%20à%20Ongles%20Gel" class="cta-button details-button" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Commander
+                </a>
+            </div>
+        </div>
+        
+        <!-- PRODUIT 22 : SAC DE PLAGE TISSÉ -->
+        <div class="product-card">
+            <img src="https://placehold.co/600x400/F5C6D8/333333?text=Sac+Plage+Tiss%C3%A9" alt="Grand sac de plage rose tissé">
+            <div class="product-details">
+                <h2 class="product-title">Grand Sac de Plage</h2>
+                <p class="product-price">7 500 FCFA</p>
+                <p class="product-description">Sac en paille tressée, idéal pour la plage ou les courses estivales. Poignées solides et intérieur doublé.</p>
+                <a href="https://wa.me/242069888945?text=Je%20souhaite%20commander%20le%20Grand%20Sac%20de%20Plage" class="cta-button details-button" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Commander
+                </a>
+            </div>
+        </div>
+        
+        <!-- PRODUIT 23 : ÉCOUTEURS SANS FIL -->
+        <div class="product-card">
+            <img src="https://placehold.co/600x400/C71585/FFFFFF?text=Ecouteurs+Sans+Fil" alt="Écouteurs sans fil intra-auriculaires roses">
+            <div class="product-details">
+                <h2 class="product-title">Écouteurs Sans Fil Pro</h2>
+                <p class="product-price">15 000 FCFA</p>
+                <p class="product-description">Qualité sonore HD, autonomie de 5h par charge. Boîtier de charge compact rose. Parfait pour le sport ou les appels.</p>
+                <a href="https://wa.me/242069888945?text=Je%20souhaite%20commander%20les%20Écouteurs%20Sans%20Fil%20Pro" class="cta-button details-button" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Commander
+                </a>
+            </div>
+        </div>
+
     </section>
 
-    <!-- VOTRE FOOTER ICI -->
+    <!-- Assurez-vous d'avoir votre pied de page ici -->
 
 </body>
 </html>
