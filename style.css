@@ -448,21 +448,173 @@ body {
 }
 
 LA BARRE DE RECHERCHE
-.product-card:hover {
-    /* Effet 3D léger au survol */
-    transform: translateY(-4px);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-}
-/* Style pour la zone de défilement (si vous l'utilisez) */
-.product-grid {
-    overflow-y: auto;
-    max-height: calc(100vh - 200px); /* Ajuste la hauteur de la grille de produits */
-}
-/* Taille uniforme pour les icônes SVG dans le menu de navigation */
-.icon {
-    display: inline-block;
-    width: 1.25rem;
-    height: 1.25rem;
-    vertical-align: middle;
+/* ========================================================== */
+/* STYLES ADDITIONNELS (RECHERCHE, FILTRES, AVIS) */
+/* ========================================================== */
+
+/* CONTENEUR DES CONTRÔLES (pour centrer la recherche et les boutons) */
+.controls-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
+/* BARRE DE RECHERCHE */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.search-bar input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 10px;
+}
+
+.search-bar i {
+    color: #FF0080;
+    font-size: 1.2em;
+}
+
+/* BOUTONS DE FILTRE */
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; /* Centrer les filtres */
+}
+
+.filter-btn {
+    background-color: #eee;
+    color: #333;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.filter-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.filter-btn.active {
+    background-color: #FF0080;
+    color: white;
+    border-color: #FF0080;
+    box-shadow: 0 4px 6px rgba(255, 0, 128, 0.3);
+}
+
+/* NOTATION ÉTOILES ET AVIS */
+.rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.rating i.fas.fa-star {
+    color: #f39c12; /* Couleur orange/jaune pour les étoiles remplies */
+    margin-right: 2px;
+    font-size: 0.9em;
+}
+
+.rating i.far.fa-star {
+    color: #ccc; /* Couleur grise pour les étoiles vides */
+    margin-right: 2px;
+    font-size: 0.9em;
+}
+
+.reviews-count {
+    font-size: 0.8em;
+    color: #777;
+    margin-left: 10px;
+}
+
+/* FORMULAIRE DE COMMENTAIRE */
+.review-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+    margin-bottom: 10px;
+}
+
+.review-form textarea {
+    resize: none;
+    height: 40px; /* Hauteur réduite pour économiser de l'espace dans la carte */
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    font-size: 0.85em;
+    transition: border-color 0.2s;
+}
+
+.review-form textarea:focus {
+    border-color: #FF0080;
+    outline: none;
+}
+
+.submit-review-btn {
+    background-color: #7f8c8d; /* Gris pour différencier du bouton WhatsApp */
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 0.8em;
+}
+
+.submit-review-btn:hover {
+    background-color: #95a5a6;
+}
+
+/* Message de succès (affiché par JavaScript) */
+.message-box {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 25px;
+    background-color: #2ecc71;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    font-weight: bold;
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translate(-50%, 20px); }
+    to { opacity: 1; transform: translate(-50%, 0); }
+}
+
+/* RESPONSIVE DESIGN SUPPLÉMENTAIRE */
+@media (max-width: 600px) {
+    .controls-container {
+        padding: 0 10px;
+    }
+    .filter-buttons {
+        /* Permettre aux boutons d'être sur plusieurs lignes si nécessaire */
+        flex-direction: row; 
+        justify-content: flex-start;
+        overflow-x: auto; /* Permet un défilement horizontal si trop de boutons */
+    }
+    .filter-btn {
+        flex-shrink: 0; /* Empêche les boutons de se réduire sur mobile */
+    }
+}
